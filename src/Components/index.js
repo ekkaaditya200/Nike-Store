@@ -1,0 +1,6 @@
+export {default as Hero} from './Hero'
+export {default as Clips} from './utls/Clips'
+export {default as SocialLink} from './utls/SocialLink'
+export {default as Sales} from './Sales'
+export {default as Title} from './utls/Title'
+export {default as Item} from './utls/Item'
