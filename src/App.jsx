@@ -1,4 +1,4 @@
-import { Hero, Sales } from "./Components/index"
+import {FlexContent, Hero, Sales } from "./Components/index"
 import { heroapi, popularsales, toprateslaes } from "./Data/data"
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
         {/* Conditional statement */}
         <Sales endpoint={popularsales} ifExists/> 
         <Sales endpoint={toprateslaes} />
+        <FlexContent></FlexContent>
       </main>
     </>
   )
