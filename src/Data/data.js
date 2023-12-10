@@ -1,17 +1,13 @@
 import heroimg from "../assets/hero.png";
-
 import hightlightimg from "../assets/hightlightimg.png";
 import sneakershoe from "../assets/sneaker.png";
-
 import clip from "../assets/video/clip.mp4";
 import vcover1 from "../assets/video/vcover1.png";
 import vcover2 from "../assets/video/vcover2.png";
 import vcover3 from "../assets/video/vcover3.png";
-
 import psale1 from "../assets/nike-air-red.png";
 import psale2 from "../assets/nike-adapt-bb.png";
 import psale3 from "../assets/nike-adapt-bb-smart.png";
-
 import product1 from "../assets/product1.png";
 import product2 from "../assets/product2.png";
 import product3 from "../assets/product3.png";
@@ -24,14 +20,11 @@ import product9 from "../assets/product9.png";
 import product10 from "../assets/product10.png";
 import product11 from "../assets/product11.png";
 import product12 from "../assets/product12.png";
-
-
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
 import youtube from "../assets/youtube.svg";
 import messenger from "../assets/messenger.svg";
-
 const heroapi = {
   title: "Play With Electric Nike",
   subtitle: "Adapt 2.0 Sneakers",
@@ -50,7 +43,6 @@ const heroapi = {
     { icon: youtube },
   ],
 };
-
 const popularsales = {
   title: "Popular Sales",
   items: [
@@ -89,25 +81,6 @@ const popularsales = {
     },
   ],
 };
-
-const highlight = {
-  heading: "HIGHLIGHTS",
-  title: "NIKE AIR WITH LIMITLESS CHOICES",
-  text: "Our Purpose is to move the world forward. We take action by building community, protecting our planet and increasing access to sport.",
-  btn: "Explore More",
-  url: "https://www.nike.com/launch/t/nocta-hot-step-black-gold",
-  img: hightlightimg,
-};
-
-const sneaker = {
-  heading: "FEATURED",
-  title: "NIKE SNEAKERS AIR LANCING SHOES",
-  text: "The radiance lives on Nike Sneakers Air Lancing Shoes, the basket ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
-  btn: "Explore More",
-  url: "https://sneakernews.com/2022/03/21/nike-lebron-2-retro-white-midnight-navy-varsity-crimson-dr0826-100/",
-  img: sneakershoe,
-};
-
 const toprateslaes = {
   title: "Top Rated Sales",
   items: [
@@ -245,8 +218,22 @@ const toprateslaes = {
     },
   ],
 };
-
-
+const highlight = {
+  heading: "HIGHLIGHTS",
+  title: "NIKE AIR WITH LIMITLESS CHOICES",
+  text: "Our Purpose is to move the world forward. We take action by building community, protecting our planet and increasing access to sport.",
+  btn: "Explore More",
+  url: "https://www.nike.com/launch/t/nocta-hot-step-black-gold",
+  img: hightlightimg,
+};
+const sneaker = {
+  heading: "FEATURED",
+  title: "NIKE SNEAKERS AIR LANCING SHOES",
+  text: "The radiance lives on Nike Sneakers Air Lancing Shoes, the basket ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
+  btn: "Explore More",
+  url: "https://sneakernews.com/2022/03/21/nike-lebron-2-retro-white-midnight-navy-varsity-crimson-dr0826-100/",
+  img: sneakershoe,
+};
 const story = {
   title: "Top Stories",
   news: [
@@ -342,37 +329,33 @@ const story = {
     },
   ],
 };
-
-
 const footerAPI = {
-  titles: [ {title: "About Nike"},{title: "Get Help"},{title: "Company"} ],
+  titles: [{ title: "About Nike" }, { title: "Get Help" }, { title: "Company" }],
   links: [
     [
-      {link: "News"},
-      {link: "Careers"},
-      {link: "Investors"},
-      {link: "Prupose"},
-      {link: "Sustainability"},
+      { link: "News" },
+      { link: "Careers" },
+      { link: "Investors" },
+      { link: "Prupose" },
+      { link: "Sustainability" },
     ],
     [
-      {link: "Order Status"},
-      {link: "Shipping & Delivery"},
-      {link: "Payment Options"},
-      {link: "Gift Card Balance"},
-      {link: "Contact Us"},
-      {link: "FAQ"},
-      {link: "Blog"},
+      { link: "Order Status" },
+      { link: "Shipping & Delivery" },
+      { link: "Payment Options" },
+      { link: "Gift Card Balance" },
+      { link: "Contact Us" },
+      { link: "FAQ" },
+      { link: "Blog" },
     ],
     [
-      {link: "Gift Cards"},
-      {link: "Promotions"},
-      {link: "Find A Store"},
-      {link: "Signup"},
-      {link: "Nike Jouneral"},
-      {link: "Send Us Feeback"},
+      { link: "Gift Cards" },
+      { link: "Promotions" },
+      { link: "Find A Store" },
+      { link: "Signup" },
+      { link: "Nike Jouneral" },
+      { link: "Send Us Feeback" },
     ],
   ]
 };
-
-
 export { heroapi, footerAPI, story, sneaker, highlight, toprateslaes, popularsales };
