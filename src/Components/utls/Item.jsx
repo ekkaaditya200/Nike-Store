@@ -1,6 +1,18 @@
 import { ShoppingBagIcon, StarIcon } from '@heroicons/react/24/solid'
 import PropTypes from 'prop-types'
-const Item = ({ifExists, id, title, color, shadow, text, img, btn, rating, price }) => {
+import { useDispatch } from 'react-redux'
+import { setAddItemToCart, setOpenCart } from '../../app/CartSlice';
+const Item = ({ ifExists, id, title, color, shadow, text, img, btn, rating, price }) => {
+    const dispatch = useDispatch();
+    const onAddToCart = () => {
+        const item = { id, title, text, img, color, shadow, rating, price };
+        dispatch(setAddItemToCart(item));
+    }
+    const onCartToggle = () => {
+        dispatch(setOpenCart({
+            cartState: true
+        }))
+    }
     return (
         <div className={`relative bg-gradient-to-b ${color} ${shadow} grid items-center ${ifExists ? 'justify-items-start' : 'justify-items-center'} rounded-xl py-7 px-7 transition-all duration-700 ease-in-out w-full hover:scale-105`}>
 
@@ -24,17 +36,17 @@ const Item = ({ifExists, id, title, color, shadow, text, img, btn, rating, price
                 </div>
 
                 <div className='flex items-center gap-3'>
-                    <button type='button' className='bg-white/90 blur-effect-theme button-theme p-0.5 shadow-sky-200'><ShoppingBagIcon
+                    <button type='button' onClick={onAddToCart} className='bg-white/90 blur-effect-theme button-theme p-0.5 shadow-sky-200'><ShoppingBagIcon
                         className='icon-style text-slate-900' /></button>
-                    <button type='btn' className='bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow-sky-200 text-sm text-black'>{btn}</button>
+                    <button onClick={() => { onAddToCart(); onCartToggle(); }} type='btn' className='bg-white/90 blur-effect-theme button-theme px-2 py-1 shadow-sky-200 text-sm text-black'>{btn}</button>
                 </div>
             </div>
 
-            <div className={`flex items-center ${ifExists ? 'absolute top-5 right-1':'justify-center'}`}>
+            <div className={`flex items-center ${ifExists ? 'absolute top-5 right-1' : 'justify-center'}`}>
                 <img
                     src={img}
                     alt={`img/item-img/${id}`}
-                    className={`transitions-theme hover:-rotate-12 ${ifExists?'h-auto w-64 lg:w-56 md:w-48 -rotate-[35deg]':'h-36 w-64'}`}></img>
+                    className={`transitions-theme hover:-rotate-12 ${ifExists ? 'h-auto w-64 lg:w-56 md:w-48 -rotate-[35deg]' : 'h-36 w-64'}`}></img>
             </div>
         </div>
     )
