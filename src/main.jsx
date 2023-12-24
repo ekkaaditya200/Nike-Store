@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
-import Store from './app/store.js'
+import Store from './app/Store.js'
 import App from './App.jsx'
 import {Toaster} from 'react-hot-toast'
 import './index.css'
